@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div id="model">
+        <div class="buttons-container">
+            <button id="regiter-button">Register</button>
+            <button id="login-button" class="not-active">Login</button>
+        </div>
+
+        <form onsubmit="" id="regiter-form">
+            <label for="regiter-email">Email</label>
+            <input type="email" id="regiter-email" placeholder="demo@example.com" required>
+            <label for="register-password">Password</label>
+            <input type=password id="register-password" placeholder="password" required pattern=".{6,}">
+            <label for="register-username">Username</label>
+            <input id="register-username" placeholder="User" required>
+            <br />
+            <input type="submit" value="Sign Up">
+
+        </form>
+
+        <form onsubmit="" id="login-form" class="hidden">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="demo@example.com" required>
+            <label for="login-password">Password</label>
+            <input type=password id="login-password" placeholder="password" required pattern=".{6,}">
+
+            <br />
+            <input type="submit" value="Sign In">
+
+        </form>
+    </div>
+
+    <div class="info-container">
+        <button type="button" id="logout-button" class="hidden">Log Out</button>
+        <h3 id="username"></h3>
+        <h3 id="highscore-tag" class="hidden">HighScore: <span id="highscore"></span></h3>
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+        <script src="game.js"></script>
+</body>
+
+</html>
