@@ -1,3 +1,4 @@
+// this might be backend specific part
 const {Client, Account,Database,ID,Query } = Appwrite
 const projectId = '6501c229d6ae06288249'
 const databaseId = ''
